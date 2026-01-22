@@ -5,6 +5,10 @@ import {
   Target,
   Sparkles,
   CheckCircle,
+  Zap,
+  Heart,
+  Video,
+  Smartphone,
 } from "lucide-react";
 import ImageSlider from "../components/ImageSlider";
 import Faq from "../components/faq";
@@ -111,6 +115,22 @@ export default function HomePage() {
     {
       name: "Asenia",
       logo: "https://ucarecdn.com/3d258937-2306-4e87-8240-501e51664aac/-/format/auto/",
+    },
+    {
+      name: "Dollars Bijoux",
+      logo: "/n1.jpeg",
+    },
+    {
+      name: "MK Industry",
+      logo: "/n2.jpeg",
+    },
+    {
+      name: "Ecole Bilingue technique Aurum",
+      logo: "/n3.jpeg",
+    },
+    {
+      name: "Mayen",
+      logo: "/n4.jpeg",
     },
   ];
 
@@ -280,6 +300,108 @@ export default function HomePage() {
                 <p className="text-gray-600 leading-relaxed text-center">{discipline.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Technologie du Sport */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Technologie du <span className="text-[#B91C2E]">Sport</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Innovations numériques et équipements modernes pour améliorer la performance, la sécurité et l'expérience sportive
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-4 w-16 h-16 flex items-center justify-center mb-4">
+                <Video className="text-white" size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Analyse Vidéo & Performance
+              </h3>
+              <p className="text-gray-700">
+                Logiciels d'analyse vidéo pour corriger les gestes techniques et optimiser chaque mouvement
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-4 w-16 h-16 flex items-center justify-center mb-4">
+                <Heart className="text-white" size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Suivi Biométrique
+              </h3>
+              <p className="text-gray-700">
+                Capteurs connectés pour mesurer rythme cardiaque, fatigue et prévenir les blessures
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-4 w-16 h-16 flex items-center justify-center mb-4">
+                <Zap className="text-white" size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Infrastructures Intelligentes
+              </h3>
+              <p className="text-gray-700">
+                Terrains avec capteurs, salles de fitness connectées et centres d'entraînement équipés
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white rounded-xl p-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Domaines Couverts</h3>
+                <ul className="space-y-2">
+                  <li className="flex items-center">
+                    <span className="text-[#FFA500] font-bold mr-2">✓</span> Performance des athlètes
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#FFA500] font-bold mr-2">✓</span> Prévention des blessures
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#FFA500] font-bold mr-2">✓</span> Expérience spectateurs
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#FFA500] font-bold mr-2">✓</span> Gestion numérique des clubs
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Nos Solutions</h3>
+                <ul className="space-y-2">
+                  <li className="flex items-center">
+                    <span className="text-[#FFA500] font-bold mr-2">✓</span> Applications mobiles adaptées
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#FFA500] font-bold mr-2">✓</span> Plateformes e-learning
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#FFA500] font-bold mr-2">✓</span> Big data et IA
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#FFA500] font-bold mr-2">✓</span> Réalité augmentée/virtuelle
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <a
+              href="/technologie"
+              className="inline-flex items-center px-8 py-3 bg-[#B91C2E] text-white font-semibold rounded-full hover:bg-[#9a1726] transition-all hover:shadow-lg"
+            >
+              Explorer la technologie du sport
+              <ArrowRight className="ml-2" size={18} />
+            </a>
           </div>
         </div>
       </section>

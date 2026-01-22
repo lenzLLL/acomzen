@@ -9,6 +9,9 @@ import {
   Building,
   CalendarCheck,
   PenTool,
+  Zap,
+  Heart,
+  Video,
 } from "lucide-react";
 
 export default function PrestationsPage() {
@@ -82,6 +85,27 @@ export default function PrestationsPage() {
         "Service professionnel de traçage et marquage de terrains de sport selon les normes internationales pour toutes les disciplines.",
       icon: PenTool,
       color: "from-[#FFA500] to-[#B91C2E]",
+    },
+    {
+      title: "Analyse Vidéo & Performance",
+      description:
+        "Logiciels d'analyse vidéo et capteurs biométriques pour corriger les gestes techniques, mesurer la performance et optimiser l'entraînement.",
+      icon: Video,
+      color: "from-[#B91C2E] to-[#FFA500]",
+    },
+    {
+      title: "Suivi Biométrique",
+      description:
+        "Capteurs connectés et outils de suivi en temps réel : rythme cardiaque, fatigue, charge d'entraînement et prévention des blessures.",
+      icon: Heart,
+      color: "from-[#FFA500] to-[#B91C2E]",
+    },
+    {
+      title: "Infrastructures Intelligentes",
+      description:
+        "Conception d'infrastructures sportives modernes avec capteurs intégrés : terrains intelligents, salles de fitness connectées et centres d'entraînement équipés.",
+      icon: Zap,
+      color: "from-[#B91C2E] to-[#FFA500]",
     },
   ];
 

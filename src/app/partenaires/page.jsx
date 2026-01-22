@@ -42,6 +42,26 @@ export default function PartenairesPage() {
       logo: "https://ucarecdn.com/3d258937-2306-4e87-8240-501e51664aac/-/format/auto/",
       category: "Services",
     },
+    {
+      name: "Dollars Bijoux",
+      logo: "/n1.jpeg",
+      category: "Bijouterie",
+    },
+    {
+      name: "MK Industry",
+      logo: "/n2.jpeg",
+      category: "Industrie",
+    },
+    {
+      name: "Ecole Bilingue technique Aurum",
+      logo: "/n3.jpeg",
+      category: "Éducation",
+    },
+    {
+      name: "Mayen",
+      logo: "/n4.jpeg",
+      category: "Services",
+    },
   ];
 
   return (

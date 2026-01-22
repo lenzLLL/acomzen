@@ -12,6 +12,7 @@ export default function Header() {
     { name: "PDG & Équipe", href: "/equipe" },
     { name: "Nos Prestations", href: "/prestations" },
     { name: "Disciplines", href: "/disciplines" },
+    { name: "Technologie", href: "/technologie" },
     { name: "Actualités", href: "/actualites" },
     { name: "Partenaires", href: "/partenaires" },
     { name: "Contact", href: "/contact" },

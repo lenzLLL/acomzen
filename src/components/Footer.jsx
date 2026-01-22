@@ -57,6 +57,14 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="/technologie"
+                  className="text-gray-400 hover:text-[#FFA500] transition-colors"
+                >
+                  Technologie du Sport
+                </a>
+              </li>
+              <li>
+                <a
                   href="/actualites"
                   className="text-gray-400 hover:text-[#FFA500] transition-colors"
                 >
@@ -110,7 +118,7 @@ export default function Footer() {
             </h3>
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=100069823201602"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#B91C2E] transition-colors"
