@@ -101,41 +101,73 @@ export default function TechnologiePage() {
       {/* Introduction */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Qu'est-ce que la Technologie du Sport ?
-            </h2>
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              La technologie du sport désigne l'ensemble des outils, équipements
-              et innovations numériques qui améliorent la pratique sportive,
-              qu'il s'agisse de la performance des athlètes, de la sécurité, de
-              l'expérience des spectateurs ou de la gestion des clubs. Elle
-              englobe aussi bien les capteurs connectés, les applications
-              d'analyse de données, que les infrastructures modernes et
-              l'e-sport.
-            </p>
-          </div>
+          <div className="space-y-6 mb-12">
+            <div className="flex items-center justify-center">
+              <div className="bg-white rounded-xl shadow-lg p-6 text-center w-full max-w-sm">
+                <div className="text-5xl mb-3">🏟️</div>
+                <h3 className="text-xl font-bold mb-1">Technologie du Sport</h3>
+                <p className="text-sm text-gray-600">Outils & innovations pour performance, sécurité, spectateurs et gestion</p>
+              </div>
+            </div>
 
-          <div className="bg-white rounded-lg shadow-lg p-8 border-l-4 border-[#FFA500]">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Équipements & Solutions
-            </h3>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start">
-                <span className="text-[#B91C2E] font-bold mr-3">•</span>
-                <span>
-                  <strong>Équipements physiques :</strong> chaussures, vêtements,
-                  terrains intelligents
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#B91C2E] font-bold mr-3">•</span>
-                <span>
-                  <strong>Solutions numériques :</strong> logiciels, IA, réalité
-                  augmentée, big data
-                </span>
-              </li>
-            </ul>
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-3">Qu'est-ce que la Technologie du Sport ?</h2>
+
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                La technologie du sport désigne l’ensemble des outils, équipements et innovations numériques qui améliorent la pratique sportive — qu’il s’agisse de la performance des athlètes, de la sécurité, de l’expérience des spectateurs ou de la gestion des clubs. Elle englobe les capteurs connectés, les applications d’analyse de données, les infrastructures modernes et l’e‑sport.
+              </p>
+
+              <p className="text-gray-700 mb-4">
+                <strong>Elle inclut :</strong> les équipements physiques (<em>chaussures, vêtements, terrains intelligents</em>) et les solutions numériques (<em>logiciels, IA, réalité augmentée, big data</em>).
+              </p>
+
+              <div className="flex flex-wrap gap-3 mb-4">
+                <span className="inline-flex items-center gap-2 bg-[#FFF7ED] text-[#C2410C] px-3 py-1 rounded-full text-sm">Chaussures</span>
+                <span className="inline-flex items-center gap-2 bg-[#FFF7ED] text-[#C2410C] px-3 py-1 rounded-full text-sm">Vêtements</span>
+                <span className="inline-flex items-center gap-2 bg-[#FFF7ED] text-[#C2410C] px-3 py-1 rounded-full text-sm">Terrains intelligents</span>
+                <span className="inline-flex items-center gap-2 bg-[#EFF6FF] text-[#1E40AF] px-3 py-1 rounded-full text-sm">Logiciels</span>
+                <span className="inline-flex items-center gap-2 bg-[#EFF6FF] text-[#1E40AF] px-3 py-1 rounded-full text-sm">IA</span>
+                <span className="inline-flex items-center gap-2 bg-[#EFF6FF] text-[#1E40AF] px-3 py-1 rounded-full text-sm">Réalité augmentée</span>
+                <span className="inline-flex items-center gap-2 bg-[#EFF6FF] text-[#1E40AF] px-3 py-1 rounded-full text-sm">Big data</span>
+              </div>
+
+              <h4 className="text-lg font-semibold mb-3">🏋️‍♂️ Domaines principaux</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+                <div className="p-4 border rounded-lg bg-gray-50">
+                  <strong>Performance des athlètes</strong>
+                  <p className="text-sm mt-2">Capteurs biométriques (mesure du rythme cardiaque, vitesse, fatigue) et logiciels d’analyse vidéo pour corriger les gestes techniques.</p>
+                </div>
+
+                <div className="p-4 border rounded-lg bg-gray-50">
+                  <strong>Prévention des blessures</strong>
+                  <p className="text-sm mt-2">Outils de suivi en temps réel pour détecter les surcharges; matériaux innovants (chaussures absorbant mieux les chocs).</p>
+                </div>
+
+                <div className="p-4 border rounded-lg bg-gray-50">
+                  <strong>Expérience des spectateurs</strong>
+                  <p className="text-sm mt-2">Diffusion en réalité augmentée/virtuelle et applications mobiles pour suivre les statistiques en direct.</p>
+                </div>
+
+                <div className="p-4 border rounded-lg bg-gray-50">
+                  <strong>Gestion et organisation</strong>
+                  <p className="text-sm mt-2">Plateformes de billetterie numérique et outils de gestion des clubs et académies sportives.</p>
+                </div>
+
+                <div className="p-4 border rounded-lg bg-gray-50 col-span-full">
+                  <strong>E-sport et sport virtuel</strong>
+                  <p className="text-sm mt-2">Jeux vidéo compétitifs intégrés dans l’écosystème sportif; compétitions en ligne pour tous les niveaux.</p>
+                </div>
+              </div>
+
+              <div className="mt-4">
+                <h5 className="font-semibold mb-2">La technologie du sport peut être appliquée à :</h5>
+                <ul className="list-disc list-inside text-gray-700 ml-4">
+                  <li>Suivi des joueurs amateurs et professionnels via applications mobiles adaptées aux réalités locales.</li>
+                  <li>Plateformes e-learning sportives pour former entraîneurs et athlètes à distance.</li>
+                  <li>Développement d’infrastructures intelligentes (terrains avec capteurs, salles de fitness connectées).</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>

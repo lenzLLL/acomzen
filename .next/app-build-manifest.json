@@ -16,10 +16,35 @@
       "static/chunks/main-app.js",
       "static/chunks/app/qui-sommes-nous/page.js"
     ],
+    "/equipe/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/equipe/page.js"
+    ],
     "/partenaires/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/partenaires/page.js"
+    ],
+    "/prestations/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/prestations/page.js"
+    ],
+    "/disciplines/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/disciplines/page.js"
+    ],
+    "/technologie/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/technologie/page.js"
+    ],
+    "/inscription/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/inscription/page.js"
     ]
   }
 }

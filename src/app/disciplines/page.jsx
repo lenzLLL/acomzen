@@ -1,4 +1,4 @@
-import { Trophy, Dumbbell } from "lucide-react";
+import { Trophy, Dumbbell, Zap, Smartphone, Video } from "lucide-react";
 
 export default function DisciplinesPage() {
   const disciplines = [
@@ -37,6 +37,54 @@ export default function DisciplinesPage() {
       description:
         "Services personnalisés pour les joueurs de tennis : coaching, tournois et développement professionnel.",
       emoji: "🎾",
+    },
+    {
+      name: "Kung-fu",
+      description:
+        "Art martial chinois qui se concentre sur la discipline et la technique.",
+      emoji: "🥋",
+    },
+    {
+      name: "Boxe",
+      description:
+        "Sport de combat qui met l'accent sur la technique et la stratégie.",
+      emoji: "🥊",
+    },
+    {
+      name: "Karaté",
+      description:
+        "Art martial japonais qui se concentre sur les coups de poing et de pied.",
+      emoji: "🥋",
+    },
+    {
+      name: "Nambudo",
+      description:
+        "Art martial qui combine plusieurs techniques de combat.",
+      emoji: "🥋",
+    },
+    {
+      name: "Course vitesse",
+      description:
+        "Compétitions de sprint sur 100m et 200m.",
+      emoji: "🏃",
+    },
+    {
+      name: "Endurance vitesse",
+      description:
+        "Compétitions d'endurance sur des distances plus longues, 400m, 800m, 1000m, 8000m.",
+      emoji: "🏃",
+    },
+    {
+      name: "Marche",
+      description:
+        "Activité physique bénéfique pour la santé et le bien-être.",
+      emoji: "🚶",
+    },
+    {
+      name: "Rugby",
+      description:
+        "Sport d'équipe qui nécessite force et stratégie.",
+      emoji: "🏉",
     },
   ];
 
@@ -143,6 +191,62 @@ export default function DisciplinesPage() {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-[#FFA500] to-[#B91C2E] rounded-2xl shadow-2xl flex items-center justify-center">
                 <Dumbbell size={120} className="text-white opacity-20" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technologie Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white rounded-lg shadow-lg p-10">
+            <div className="flex flex-col md:flex-row items-start gap-6">
+              <div className="w-20 h-20 bg-white bg-opacity-10 rounded-full flex items-center justify-center">
+                <Zap size={36} className="text-white" />
+              </div>
+              <div className="flex-1">
+                <h2 className="text-3xl font-bold mb-3">Technologie du Sport <span className="text-[#FFA500]">🏋️‍♂️</span></h2>
+                <p className="mb-4 text-white/90 leading-relaxed">
+                  La technologie du sport regroupe outils, équipements et solutions numériques (capteurs, IA, analyse vidéo, infrastructures connectées, e‑sport) qui améliorent la performance, la sécurité, l’expérience des spectateurs et la gestion des clubs.
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                  <div>
+                    <h3 className="font-semibold mb-2">Équipements & solutions</h3>
+                    <ul className="text-white/90 space-y-1">
+                      <li>Chaussures, vêtements, terrains intelligents</li>
+                      <li>Logiciels, IA, réalité augmentée, big data</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Domaines principaux</h3>
+                    <ul className="text-white/90 space-y-1">
+                      <li>Performance : capteurs biométriques, analyse vidéo</li>
+                      <li>Prévention : suivi en temps réel, matériaux innovants</li>
+                      <li>Expérience spectateurs & gestion : AR/VR, billetterie numérique</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Applications</h3>
+                    <ul className="text-white/90 space-y-1">
+                      <li>Suivi via applications mobiles adaptées aux réalités locales</li>
+                      <li>Plateformes e-learning pour former entraîneurs et athlètes</li>
+                      <li>Infrastructures intelligentes (terrains avec capteurs, salles connectées)</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-6 flex gap-4">
+                  <a href="/technologie" className="inline-flex items-center gap-3 bg-white text-[#B91C2E] font-bold py-2 px-4 rounded-full hover:shadow-lg transition">
+                    <Smartphone size={18} /> Découvrir plus
+                  </a>
+                  <a href="/contact" className="inline-flex items-center gap-3 border-2 border-white text-white font-bold py-2 px-4 rounded-full hover:bg-white hover:text-[#B91C2E] transition">
+                    <Video size={18} /> Nous contacter
+                  </a>
+                </div>
               </div>
             </div>
           </div>

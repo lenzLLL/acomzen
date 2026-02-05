@@ -36,7 +36,7 @@ export default function EquipePage() {
             <div>
               <div className="mb-6">
                 <h2 className="text-4xl font-bold text-gray-900 mb-2">
-                  STYVE ZOALANG
+                  STEVE ZOALANG
                 </h2>
                 <p className="text-xl text-[#B91C2E] font-semibold">
                   Président Directeur Général

@@ -81,6 +81,46 @@ export default function HomePage() {
         "Services personnalisés pour les joueurs de tennis : coaching, tournois et développement professionnel.",
       emoji: "🎾",
     },
+    {
+      name: "Kung-fu",
+      description: "Art martial chinois qui se concentre sur la discipline et la technique.",
+      emoji: "🥋",
+    },
+    {
+      name: "Boxe",
+      description: "Sport de combat qui met l'accent sur la technique et la stratégie.",
+      emoji: "🥊",
+    },
+    {
+      name: "Karaté",
+      description: "Art martial japonais qui se concentre sur les coups de poing et de pied.",
+      emoji: "🥋",
+    },
+    {
+      name: "Nambudo",
+      description: "Art martial qui combine plusieurs techniques de combat.",
+      emoji: "🥋",
+    },
+    {
+      name: "Course vitesse",
+      description: "Compétitions de sprint sur 100m et 200m.",
+      emoji: "🏃",
+    },
+    {
+      name: "Endurance vitesse",
+      description: "Compétitions d'endurance sur des distances plus longues.",
+      emoji: "🏃",
+    },
+    {
+      name: "Marche",
+      description: "Activité physique bénéfique pour la santé et le bien-être.",
+      emoji: "🚶",
+    },
+    {
+      name: "Rugby",
+      description: "Sport d'équipe qui nécessite force et stratégie.",
+      emoji: "🏉",
+    },
   ];
 
   const partners = [
@@ -159,7 +199,7 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto">
-              Management et marketing sportif professionnel au Cameroun
+              Agence de management sportif, ancrée au Cameroun et rayonnant à travers l'Afrique.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

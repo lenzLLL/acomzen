@@ -1,4 +1,4 @@
-// File: C:\Users\IVAN REUS\Downloads\create-anything\apps\web\src\app\partenaires\page.jsx
+// File: H:\Téléchargements - Copie (3)\create-anything\apps\web\src\app\partenaires\page.jsx
 import * as entry from '../../../../src/app/partenaires/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
