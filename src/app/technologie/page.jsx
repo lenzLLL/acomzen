@@ -78,7 +78,7 @@ export default function TechnologiePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white py-8 sm:py-12 lg:py-20 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
@@ -89,10 +89,10 @@ export default function TechnologiePage() {
         <div className="absolute inset-0 bg-black opacity-20"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 lg:mb-6">
             Technologie du Sport
           </h1>
-          <p className="text-xl max-w-3xl">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl">
             Innovons ensemble pour transformer la pratique sportive en Afrique
           </p>
         </div>
@@ -173,37 +173,37 @@ export default function TechnologiePage() {
       </section>
 
       {/* Domaines Principaux */}
-      <section className="py-16">
+      <section className="py-8 sm:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 sm:mb-3 lg:mb-4">
               Domaines Principaux
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600">
               Explorez les différents domaines d'application
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {domains.map((domain, index) => {
               const IconComponent = domain.icon;
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow p-6 border-t-4 border-[#FFA500]"
+                  className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow p-4 sm:p-6 border-t-4 border-[#FFA500]"
                 >
-                  <div className="flex items-center mb-4">
-                    <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-3 mr-4">
-                      <IconComponent className="text-white" size={24} />
+                  <div className="flex items-center mb-3 sm:mb-4">
+                    <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-2 sm:p-3 mr-3 sm:mr-4">
+                      <IconComponent className="text-white" size={18} />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900">
+                    <h3 className="text-sm sm:text-base lg:text-xl font-bold text-gray-900">
                       {domain.title}
                     </h3>
                   </div>
-                  <ul className="space-y-3">
+                  <ul className="space-y-2 sm:space-y-3">
                     {domain.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start text-gray-700">
-                        <span className="text-[#FFA500] font-bold mr-2">→</span>
+                      <li key={idx} className="flex items-start text-xs sm:text-sm lg:text-base text-gray-700">
+                        <span className="text-[#FFA500] font-bold mr-2 flex-shrink-0">→</span>
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -216,32 +216,32 @@ export default function TechnologiePage() {
       </section>
 
       {/* Applications Concrètes */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-8 sm:py-12 lg:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 sm:mb-3 lg:mb-4">
               Applications <span className="text-[#FFA500]">Concrètes</span>
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600">
               Comment ACOMZÉN intègre la technologie du sport
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {applications.map((app, index) => {
               const IconComponent = app.icon;
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-all hover:scale-105"
+                  className="bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-all hover:scale-105"
                 >
-                  <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6 mx-auto">
-                    <IconComponent className="text-white" size={32} />
+                  <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-3 sm:p-4 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 flex items-center justify-center mb-4 sm:mb-6 mx-auto">
+                    <IconComponent className="text-white" size={24} />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+                  <h3 className="text-sm sm:text-base lg:text-xl font-bold text-gray-900 mb-2 sm:mb-3 lg:mb-4 text-center">
                     {app.title}
                   </h3>
-                  <p className="text-gray-700 text-center">{app.description}</p>
+                  <p className="text-xs sm:text-sm lg:text-base text-gray-700 text-center">{app.description}</p>
                 </div>
               );
             })}
@@ -250,13 +250,13 @@ export default function TechnologiePage() {
       </section>
 
       {/* Innovation & Avenir */}
-      <section className="py-16">
+      <section className="py-8 sm:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white rounded-lg shadow-lg p-12">
-            <h2 className="text-3xl font-bold mb-6">
+          <div className="bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white rounded-lg shadow-lg p-6 sm:p-8 lg:p-12">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6">
               L'Avenir du Sport en Afrique
             </h2>
-            <p className="text-lg mb-8 leading-relaxed">
+            <p className="text-xs sm:text-sm lg:text-lg mb-6 sm:mb-8 leading-relaxed">
               ACOMZÉN SPORTS MANAGEMENT s'engage à intégrer les innovations
               technologiques pour offrir aux athlètes africains les mêmes
               opportunités et ressources que leurs homologues mondiaux. Notre
@@ -264,10 +264,10 @@ export default function TechnologiePage() {
               transparent et professionnalisé.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-              <div className="bg-white bg-opacity-20 rounded-lg p-6">
-                <h3 className="text-xl font-bold mb-3">Nos Engagements</h3>
-                <ul className="space-y-2 text-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mt-6 sm:mt-8">
+              <div className="bg-white bg-opacity-20 rounded-lg p-4 sm:p-6">
+                <h3 className="text-base sm:text-lg font-bold mb-3">Nos Engagements</h3>
+                <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
                   <li>✓ Investir dans les infrastructures modernes</li>
                   <li>✓ Former les entraîneurs aux outils technologiques</li>
                   <li>✓ Rendre la technologie accessible à tous les niveaux</li>
@@ -275,9 +275,9 @@ export default function TechnologiePage() {
                 </ul>
               </div>
 
-              <div className="bg-white bg-opacity-20 rounded-lg p-6">
-                <h3 className="text-xl font-bold mb-3">Nos Objectifs</h3>
-                <ul className="space-y-2 text-sm">
+              <div className="bg-white bg-opacity-20 rounded-lg p-4 sm:p-6">
+                <h3 className="text-base sm:text-lg font-bold mb-3">Nos Objectifs</h3>
+                <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
                   <li>✓ Développer l'e-sport en Afrique</li>
                   <li>✓ Améliorer la performance des athlètes</li>
                   <li>✓ Prévenir les blessures sportives</li>
@@ -290,18 +290,18 @@ export default function TechnologiePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-8 sm:py-12 lg:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 lg:mb-6">
             Prêt à Transformer Votre Performance ?
           </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
             Contactez-nous pour découvrir comment la technologie du sport peut
             révolutionner votre pratique.
           </p>
           <a
             href="/contact"
-            className="inline-block bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white font-bold py-3 px-8 rounded-lg hover:shadow-lg transition-all transform hover:scale-105"
+            className="inline-block bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white text-sm sm:text-base font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg hover:shadow-lg transition-all transform hover:scale-105"
           >
             Nous Contacter
           </a>

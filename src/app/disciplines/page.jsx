@@ -29,7 +29,7 @@ export default function DisciplinesPage() {
     {
       name: "Athlétisme",
       description:
-        "Soutien complet des athlètes : entraînement, compétitions, sponsoring et gestion de carrière.",
+        "Soutien complet des athlètes : entraînement, compétitions, sponsoring et gestion de carrière. Compétitions d'endurance sur des distances plus longues, 400m, 800m, 1000m, 8000m. Compétitions de sprint sur 100m et 200m.",
       emoji: "🏃",
     },
     {
@@ -63,18 +63,6 @@ export default function DisciplinesPage() {
       emoji: "🥋",
     },
     {
-      name: "Course vitesse",
-      description:
-        "Compétitions de sprint sur 100m et 200m.",
-      emoji: "🏃",
-    },
-    {
-      name: "Endurance vitesse",
-      description:
-        "Compétitions d'endurance sur des distances plus longues, 400m, 800m, 1000m, 8000m.",
-      emoji: "🏃",
-    },
-    {
       name: "Marche",
       description:
         "Activité physique bénéfique pour la santé et le bien-être.",
@@ -86,12 +74,18 @@ export default function DisciplinesPage() {
         "Sport d'équipe qui nécessite force et stratégie.",
       emoji: "🏉",
     },
+    {
+      name: "Taekwondo",
+      description:
+        "Art martial coréen qui se concentre sur les coups de pied et de poing, discipline olympique.",
+      emoji: "🥋",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-white">
       {/* Hero with Background Image */}
-      <section className="relative bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white py-12 sm:py-16 lg:py-20 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
@@ -102,10 +96,10 @@ export default function DisciplinesPage() {
         <div className="absolute inset-0 bg-black opacity-20"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             Disciplines Sportives
           </h1>
-          <p className="text-xl max-w-3xl">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl">
             ACOMZÉN accompagne les sportifs dans diverses disciplines pratiquées
             au Cameroun
           </p>
@@ -113,33 +107,33 @@ export default function DisciplinesPage() {
       </section>
 
       {/* Disciplines Section */}
-      <section className="py-16">
+      <section className="py-8 sm:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-6 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">
               Sports{" "}
               <span className="text-[#FFA500]">Collectifs & Individuels</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto">
               Nous offrons nos services dans les principales disciplines
               sportives pratiquées au Cameroun, avec une expertise adaptée aux
               spécificités de chaque sport.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8 mb-12 sm:mb-16">
             {disciplines.map((discipline, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-[#B91C2E]"
+                className="bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-[#B91C2E]"
               >
-                <div className="text-6xl mb-4 text-center">
+                <div className="text-4xl sm:text-5xl md:text-6xl mb-2 sm:mb-3 md:mb-4 text-center">
                   {discipline.emoji}
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">
+                <h3 className="text-base sm:text-lg md:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 text-center">
                   {discipline.name}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-center">
+                <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed text-center">
                   {discipline.description}
                 </p>
               </div>
@@ -149,26 +143,26 @@ export default function DisciplinesPage() {
       </section>
 
       {/* Fitness Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-8 sm:py-12 lg:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
             <div>
-              <div className="w-20 h-20 bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full flex items-center justify-center mb-6">
-                <Dumbbell size={40} className="text-white" />
+              <div className="w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                <Dumbbell size={32} className="text-white sm:w-10 sm:h-10" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
                 <span className="text-[#FFA500]">Fitness</span> & Préparation
                 Physique
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
                 Au-delà des disciplines sportives traditionnelles, ACOMZÉN
                 propose également des services dédiés au{" "}
                 <strong>fitness et à la préparation physique</strong>.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
                 Nos programmes incluent :
               </p>
-              <ul className="space-y-2 text-gray-700 mb-6">
+              <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm md:text-base text-gray-700 mb-4 sm:mb-6">
                 <li className="flex items-start">
                   <span className="text-[#B91C2E] mr-2">•</span>
                   <span>Salles de fitness équipées et modernes</span>
@@ -190,7 +184,7 @@ export default function DisciplinesPage() {
 
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-[#FFA500] to-[#B91C2E] rounded-2xl shadow-2xl flex items-center justify-center">
-                <Dumbbell size={120} className="text-white opacity-20" />
+                <Dumbbell size={80} className="text-white opacity-20 sm:w-32 sm:h-32" />
               </div>
             </div>
           </div>
@@ -239,12 +233,12 @@ export default function DisciplinesPage() {
                   </div>
                 </div>
 
-                <div className="mt-6 flex gap-4">
-                  <a href="/technologie" className="inline-flex items-center gap-3 bg-white text-[#B91C2E] font-bold py-2 px-4 rounded-full hover:shadow-lg transition">
-                    <Smartphone size={18} /> Découvrir plus
+                <div className="mt-6 flex flex-col sm:flex-row gap-2 sm:gap-4">
+                  <a href="/technologie" className="inline-flex items-center justify-center gap-2 bg-white text-[#B91C2E] font-bold py-2 px-4 text-xs sm:text-sm rounded-full hover:shadow-lg transition">
+                    <Smartphone size={16} /> Découvrir plus
                   </a>
-                  <a href="/contact" className="inline-flex items-center gap-3 border-2 border-white text-white font-bold py-2 px-4 rounded-full hover:bg-white hover:text-[#B91C2E] transition">
-                    <Video size={18} /> Nous contacter
+                  <a href="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold py-2 px-4 text-xs sm:text-sm rounded-full hover:bg-white hover:text-[#B91C2E] transition">
+                    <Video size={16} /> Nous contacter
                   </a>
                 </div>
               </div>
@@ -254,26 +248,26 @@ export default function DisciplinesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white">
+      <section className="py-8 sm:py-12 lg:py-16 bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Trophy size={64} className="mx-auto mb-6 opacity-90" />
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <Trophy size={48} className="mx-auto mb-4 sm:mb-6 opacity-90 sm:w-16 sm:h-16" />
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
             Votre discipline n'est pas listée ?
           </h2>
-          <p className="text-xl mb-8">
+          <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8 lg:text-xl">
             Contactez-nous ! Nous sommes ouverts à accompagner des sportifs dans
             d'autres disciplines sportives.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">
             <a
               href="/contact"
-              className="px-8 py-4 bg-white text-[#B91C2E] font-bold rounded-full hover:bg-gray-100 transition-all hover:shadow-xl"
+              className="px-6 sm:px-8 py-2.5 sm:py-4 bg-white text-[#B91C2E] font-bold rounded-full hover:bg-gray-100 transition-all hover:shadow-xl text-sm sm:text-base"
             >
               Nous contacter
             </a>
             <a
               href="/inscription"
-              className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-[#B91C2E] transition-all"
+              className="px-6 sm:px-8 py-2.5 sm:py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-[#B91C2E] transition-all text-sm sm:text-base"
             >
               S'inscrire
             </a>

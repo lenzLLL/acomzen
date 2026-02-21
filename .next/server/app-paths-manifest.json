@@ -1,7 +1,6 @@
 {
   "/page": "app/page.js",
-  "/prestations/page": "app/prestations/page.js",
+  "/qui-sommes-nous/page": "app/qui-sommes-nous/page.js",
   "/disciplines/page": "app/disciplines/page.js",
-  "/technologie/page": "app/technologie/page.js",
-  "/inscription/page": "app/inscription/page.js"
+  "/equipe/page": "app/equipe/page.js"
 }

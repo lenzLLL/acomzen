@@ -63,7 +63,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero with Background Image */}
-      <section className="relative bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white py-8 sm:py-12 lg:py-20 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
@@ -74,64 +74,64 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-black opacity-20"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 lg:mb-6">
             Contactez-nous
           </h1>
-          <p className="text-xl max-w-3xl">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl">
             Nous sommes à votre écoute pour répondre à toutes vos questions
           </p>
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-8 sm:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
             {/* Contact Info */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 lg:mb-8">
                 Nos <span className="text-[#FFA500]">Coordonnées</span>
               </h2>
 
-              <div className="space-y-6 mb-8">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail size={24} className="text-white" />
+              <div className="space-y-4 sm:space-y-5 lg:space-y-6 mb-4 sm:mb-6 lg:mb-8">
+                <div className="flex items-start space-x-2 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail size={20} className="text-white sm:w-6 sm:h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-1">Email</h3>
+                    <h3 className="font-bold text-sm sm:text-base text-gray-900 mb-1">Email</h3>
                     <a
                       href="mailto:acomzen.sm@gmail.com"
-                      className="text-gray-600 hover:text-[#B91C2E]"
+                      className="text-xs sm:text-sm text-gray-600 hover:text-[#B91C2E]"
                     >
                       acomzen.sm@gmail.com
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFA500] to-[#B91C2E] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone size={24} className="text-white" />
+                <div className="flex items-start space-x-2 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#FFA500] to-[#B91C2E] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone size={20} className="text-white sm:w-6 sm:h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-1">Téléphone</h3>
+                    <h3 className="font-bold text-sm sm:text-base text-gray-900 mb-1">Téléphone</h3>
                     <a
                       href="tel:+237694868694"
-                      className="text-gray-600 hover:text-[#B91C2E]"
+                      className="text-xs sm:text-sm text-gray-600 hover:text-[#B91C2E]"
                     >
                       +237 694 86 86 94
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin size={24} className="text-white" />
+                <div className="flex items-start space-x-2 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin size={20} className="text-white sm:w-6 sm:h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-2">
+                    <h3 className="font-bold text-sm sm:text-base text-gray-900 mb-1 sm:mb-2">
                       Nos Bureaux
                     </h3>
-                    <div className="space-y-2 text-gray-600">
+                    <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-600">
                       <p>
                         <strong className="text-gray-900">Douala :</strong> BP
                         cité face dispensaire Camrail
@@ -162,30 +162,30 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div>
-              <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-[#B91C2E]">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg border-t-4 border-[#B91C2E]">
+                <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
                   Envoyez-nous un message
                 </h2>
 
                 {success && (
-                  <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center space-x-2">
-                    <CheckCircle size={20} className="text-green-600" />
-                    <p className="text-green-600">
+                  <div className="mb-4 sm:mb-6 p-3 sm:p-4 bg-green-50 border border-green-200 rounded-lg flex items-center space-x-2">
+                    <CheckCircle size={18} className="text-green-600 flex-shrink-0" />
+                    <p className="text-xs sm:text-sm text-green-600">
                       Message envoyé avec succès !
                     </p>
                   </div>
                 )}
 
                 {error && (
-                  <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center space-x-2">
-                    <AlertCircle size={20} className="text-red-600" />
-                    <p className="text-red-600">{error}</p>
+                  <div className="mb-4 sm:mb-6 p-3 sm:p-4 bg-red-50 border border-red-200 rounded-lg flex items-center space-x-2">
+                    <AlertCircle size={18} className="text-red-600 flex-shrink-0" />
+                    <p className="text-xs sm:text-sm text-red-600">{error}</p>
                   </div>
                 )}
 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                       Nom complet *
                     </label>
                     <input
@@ -194,12 +194,12 @@ export default function ContactPage() {
                       value={formData.nom}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                       Email *
                     </label>
                     <input
@@ -208,12 +208,12 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                       Téléphone
                     </label>
                     <input
@@ -221,12 +221,12 @@ export default function ContactPage() {
                       name="telephone"
                       value={formData.telephone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                       Sujet *
                     </label>
                     <input
@@ -235,12 +235,12 @@ export default function ContactPage() {
                       value={formData.sujet}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                       Message *
                     </label>
                     <textarea
@@ -249,14 +249,14 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       rows="6"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent resize-none"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent resize-none"
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full px-8 py-4 bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white font-bold rounded-full hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white text-sm sm:text-base font-bold rounded-full hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
                   </button>

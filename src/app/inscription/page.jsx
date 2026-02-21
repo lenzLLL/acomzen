@@ -98,26 +98,26 @@ export default function InscriptionPage() {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center px-4">
         <div className="max-w-md w-full text-center">
-          <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <CheckCircle size={48} className="text-green-600" />
+          <div className="w-16 h-16 sm:w-20 sm:h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+            <CheckCircle size={32} className="text-green-600 sm:w-12 sm:h-12" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
             Inscription Réussie !
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8">
             Merci de votre inscription. Nous avons bien reçu vos informations et
             nous vous contacterons très bientôt.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a
               href="/"
-              className="px-6 py-3 bg-[#B91C2E] text-white font-semibold rounded-full hover:bg-[#9a1726] transition-all"
+              className="px-4 sm:px-6 py-2 sm:py-3 bg-[#B91C2E] text-white text-sm sm:text-base font-semibold rounded-full hover:bg-[#9a1726] transition-all"
             >
               Retour à l'accueil
             </a>
             <button
               onClick={() => setSuccess(false)}
-              className="px-6 py-3 bg-gray-100 text-gray-700 font-semibold rounded-full hover:bg-gray-200 transition-all"
+              className="px-4 sm:px-6 py-2 sm:py-3 bg-gray-100 text-gray-700 text-sm sm:text-base font-semibold rounded-full hover:bg-gray-200 transition-all"
             >
               Nouvelle inscription
             </button>
@@ -130,7 +130,7 @@ export default function InscriptionPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero with Background Image */}
-      <section className="relative bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white py-8 sm:py-12 lg:py-20 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
@@ -141,8 +141,8 @@ export default function InscriptionPage() {
         <div className="absolute inset-0 bg-black opacity-20"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Inscription</h1>
-          <p className="text-xl max-w-3xl">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 lg:mb-6">Inscription</h1>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl">
             Rejoignez ACOMZÉN SPORTS MANAGEMENT et bénéficiez d'un
             accompagnement professionnel
           </p>
@@ -150,24 +150,24 @@ export default function InscriptionPage() {
       </section>
 
       {/* Form */}
-      <section className="py-16">
+      <section className="py-8 sm:py-12 lg:py-16">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-[#B91C2E]">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg border-t-4 border-[#B91C2E]">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
               Formulaire d'inscription
             </h2>
 
             {error && (
-              <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center space-x-2">
-                <AlertCircle size={20} className="text-red-600" />
-                <p className="text-red-600">{error}</p>
+              <div className="mb-4 sm:mb-6 p-3 sm:p-4 bg-red-50 border border-red-200 rounded-lg flex items-center space-x-2">
+                <AlertCircle size={18} className="text-red-600 flex-shrink-0" />
+                <p className="text-xs sm:text-sm text-red-600">{error}</p>
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+              <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     Nom *
                   </label>
                   <input
@@ -176,12 +176,12 @@ export default function InscriptionPage() {
                     value={formData.nom}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     Prénom *
                   </label>
                   <input
@@ -190,13 +190,13 @@ export default function InscriptionPage() {
                     value={formData.prenom}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   Email *
                 </label>
                 <input
@@ -205,12 +205,12 @@ export default function InscriptionPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   Téléphone *
                 </label>
                 <input
@@ -220,12 +220,12 @@ export default function InscriptionPage() {
                   onChange={handleChange}
                   required
                   placeholder="+237 6XX XX XX XX"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   Pays *
                 </label>
                 <select
@@ -233,7 +233,7 @@ export default function InscriptionPage() {
                   value={formData.pays}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
                 >
                   <option value="">Sélectionnez votre pays</option>
                   {pays.map((p) => (
@@ -245,7 +245,7 @@ export default function InscriptionPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   Type d'inscription *
                 </label>
                 <select
@@ -253,7 +253,7 @@ export default function InscriptionPage() {
                   value={formData.type_inscription}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
                 >
                   <option value="">Sélectionnez le type</option>
                   <option value="discipline">Discipline sportive</option>
@@ -263,14 +263,14 @@ export default function InscriptionPage() {
 
               {formData.type_inscription === "discipline" && (
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     Discipline sportive
                   </label>
                   <select
                     name="discipline_ou_fitness"
                     value={formData.discipline_ou_fitness}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
                   >
                     <option value="">Sélectionnez une discipline</option>
                     {disciplines.map((d) => (
@@ -284,7 +284,7 @@ export default function InscriptionPage() {
 
               {formData.type_inscription === "fitness" && (
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     Programme fitness souhaité
                   </label>
                   <input
@@ -293,7 +293,7 @@ export default function InscriptionPage() {
                     value={formData.discipline_ou_fitness}
                     onChange={handleChange}
                     placeholder="Ex: Musculation, Cardio, Yoga..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#B91C2E] focus:border-transparent"
                   />
                 </div>
               )}
@@ -301,7 +301,7 @@ export default function InscriptionPage() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-8 py-4 bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white font-bold rounded-full hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white text-sm sm:text-base font-bold rounded-full hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? "Envoi en cours..." : "S'inscrire"}
               </button>

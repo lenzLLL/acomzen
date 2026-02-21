@@ -72,7 +72,7 @@ export default function HomePage() {
     {
       name: "Athlétisme",
       description:
-        "Soutien complet des athlètes : entraînement, compétitions, sponsoring et gestion de carrière.",
+        "Soutien complet des athlètes : entraînement, compétitions, sponsoring et gestion de carrière. Compétitions d'endurance sur des distances plus longues, 400m, 800m, 1000m, 8000m. Compétitions de sprint sur 100m et 200m.",
       emoji: "🏃",
     },
     {
@@ -101,16 +101,7 @@ export default function HomePage() {
       description: "Art martial qui combine plusieurs techniques de combat.",
       emoji: "🥋",
     },
-    {
-      name: "Course vitesse",
-      description: "Compétitions de sprint sur 100m et 200m.",
-      emoji: "🏃",
-    },
-    {
-      name: "Endurance vitesse",
-      description: "Compétitions d'endurance sur des distances plus longues.",
-      emoji: "🏃",
-    },
+
     {
       name: "Marche",
       description: "Activité physique bénéfique pour la santé et le bien-être.",
@@ -120,6 +111,11 @@ export default function HomePage() {
       name: "Rugby",
       description: "Sport d'équipe qui nécessite force et stratégie.",
       emoji: "🏉",
+    },
+    {
+      name: "Taekwondo",
+      description: "Art martial coréen qui se concentre sur les coups de pied et de poing, discipline olympique.",
+      emoji: "🥋",
     },
   ];
 
@@ -189,29 +185,29 @@ export default function HomePage() {
 
         <div className="absolute inset-0 bg-black opacity-20"></div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-32">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
               Concentrez-vous sur le jeu,
               <br />
               <span className="text-[#FFA500]">
                 nous nous occupons du reste
               </span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-gray-100 max-w-3xl mx-auto">
               Agence de management sportif, ancrée au Cameroun et rayonnant à travers l'Afrique.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">
               <a
                 href="/inscription"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#B91C2E] font-bold rounded-full hover:bg-gray-100 transition-all hover:shadow-xl text-lg"
-              >
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-2.5 sm:py-4 bg-white text-[#B91C2E] font-bold rounded-full hover:bg-gray-100 transition-all hover:shadow-xl text-sm sm:text-lg">
+              
                 S'inscrire maintenant
                 <ArrowRight className="ml-2" size={20} />
               </a>
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-[#B91C2E] transition-all text-lg"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-2.5 sm:py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-[#B91C2E] transition-all text-sm sm:text-lg"
               >
                 Nous contacter
               </a>
@@ -233,14 +229,14 @@ export default function HomePage() {
       </section>
 
       {/* Introduction */}
-      <section className="py-16 bg-white">
+      <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
               Bienvenue chez{" "}
               <span className="text-[#B91C2E]">ACOMZÉN SPORTS MANAGEMENT</span>
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
               Fondée en 2024 au Cameroun, ACOMZÉN est une agence de management
               et marketing sportif dédiée à l'excellence. Nous accompagnons les
               sportifs, clubs et fédérations vers le succès grâce à notre
@@ -251,41 +247,41 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-8 sm:py-12 lg:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-6 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">
               Nos <span className="text-[#FFA500]">Services</span>
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600">
               Des solutions complètes pour votre réussite sportive
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 border-t-4 border-[#B91C2E]"
+                  className="bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 border-t-4 border-[#B91C2E]"
                 >
-                  <div className="w-14 h-14 bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-lg flex items-center justify-center mb-4">
-                    <Icon size={28} className="text-white" />
+                  <div className="w-12 sm:w-14 h-12 sm:h-14 bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                    <Icon size={24} className="text-white sm:w-7 sm:h-7" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-1 sm:mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600">{service.description}</p>
+                  <p className="text-xs sm:text-sm md:text-base text-gray-600">{service.description}</p>
                 </div>
               );
             })}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12">
             <a
               href="/prestations"
-              className="inline-flex items-center px-6 py-3 bg-[#B91C2E] text-white font-semibold rounded-full hover:bg-[#9a1726] transition-all hover:shadow-lg"
+              className="inline-flex items-center px-4 sm:px-6 py-2.5 sm:py-3 bg-[#B91C2E] text-white font-semibold text-sm sm:text-base rounded-full hover:bg-[#9a1726] transition-all hover:shadow-lg"
             >
               Découvrir toutes nos prestations
               <ArrowRight className="ml-2" size={18} />
@@ -295,15 +291,15 @@ export default function HomePage() {
       </section>
 
       {/* Valeurs */}
-      <section className="py-16 bg-white">
+      <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-6 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">
               Nos <span className="text-[#FFA500]">Valeurs</span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
             {values.map((value, index) => (
               <div key={index} className="value-card">
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -318,26 +314,26 @@ export default function HomePage() {
       </section>
 
       {/* Disciplines Grid (copied from /disciplines) */}
-      <section className="py-16 bg-white">
+      <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-6 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">
               Sports <span className="text-[#FFA500]">Collectifs & Individuels</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
               Nous offrons nos services dans les principales disciplines sportives pratiquées au Cameroun.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8 mb-12 sm:mb-16">
             {disciplines.map((discipline, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-[#B91C2E]"
+                className="bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-[#B91C2E]"
               >
-                <div className="text-6xl mb-4 text-center">{discipline.emoji}</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">{discipline.name}</h3>
-                <p className="text-gray-600 leading-relaxed text-center">{discipline.description}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl mb-2 sm:mb-3 md:mb-4 text-center">{discipline.emoji}</div>
+                <h3 className="text-base sm:text-lg md:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 text-center">{discipline.name}</h3>
+                <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed text-center">{discipline.description}</p>
               </div>
             ))}
           </div>
@@ -345,60 +341,60 @@ export default function HomePage() {
       </section>
 
       {/* Technologie du Sport */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-8 sm:py-12 lg:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-6 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">
               Technologie du <span className="text-[#B91C2E]">Sport</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
               Innovations numériques et équipements modernes pour améliorer la performance, la sécurité et l'expérience sportive
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
-              <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-4 w-16 h-16 flex items-center justify-center mb-4">
-                <Video className="text-white" size={32} />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
+            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-3 sm:p-4 w-14 sm:w-16 h-14 sm:h-16 flex items-center justify-center mb-4">
+                <Video className="text-white" size={28} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4">
                 Analyse Vidéo & Performance
               </h3>
-              <p className="text-gray-700">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700">
                 Logiciels d'analyse vidéo pour corriger les gestes techniques et optimiser chaque mouvement
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
-              <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-4 w-16 h-16 flex items-center justify-center mb-4">
-                <Heart className="text-white" size={32} />
+            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-3 sm:p-4 w-14 sm:w-16 h-14 sm:h-16 flex items-center justify-center mb-4">
+                <Heart className="text-white" size={28} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4">
                 Suivi Biométrique
               </h3>
-              <p className="text-gray-700">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700">
                 Capteurs connectés pour mesurer rythme cardiaque, fatigue et prévenir les blessures
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
-              <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-4 w-16 h-16 flex items-center justify-center mb-4">
-                <Zap className="text-white" size={32} />
+            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <div className="bg-gradient-to-br from-[#B91C2E] to-[#FFA500] rounded-full p-3 sm:p-4 w-14 sm:w-16 h-14 sm:h-16 flex items-center justify-center mb-4">
+                <Zap className="text-white" size={28} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4">
                 Infrastructures Intelligentes
               </h3>
-              <p className="text-gray-700">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700">
                 Terrains avec capteurs, salles de fitness connectées et centres d'entraînement équipés
               </p>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white rounded-xl p-8 mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white rounded-xl p-6 sm:p-8 mb-8 sm:mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               <div>
-                <h3 className="text-2xl font-bold mb-4">Domaines Couverts</h3>
-                <ul className="space-y-2">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Domaines Couverts</h3>
+                <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm md:text-base">
                   <li className="flex items-center">
                     <span className="text-[#FFA500] font-bold mr-2">✓</span> Performance des athlètes
                   </li>
@@ -415,8 +411,8 @@ export default function HomePage() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold mb-4">Nos Solutions</h3>
-                <ul className="space-y-2">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Nos Solutions</h3>
+                <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm md:text-base">
                   <li className="flex items-center">
                     <span className="text-[#FFA500] font-bold mr-2">✓</span> Applications mobiles adaptées
                   </li>
@@ -437,7 +433,7 @@ export default function HomePage() {
           <div className="text-center">
             <a
               href="/technologie"
-              className="inline-flex items-center px-8 py-3 bg-[#B91C2E] text-white font-semibold rounded-full hover:bg-[#9a1726] transition-all hover:shadow-lg"
+              className="inline-flex items-center px-4 sm:px-8 py-2.5 sm:py-3 bg-[#B91C2E] text-white font-semibold text-sm sm:text-base rounded-full hover:bg-[#9a1726] transition-all hover:shadow-lg"
             >
               Explorer la technologie du sport
               <ArrowRight className="ml-2" size={18} />
@@ -451,28 +447,28 @@ export default function HomePage() {
       <Faq />
 
       {/* Partenaires Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-8 sm:py-12 lg:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-6 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">
               Nos <span className="text-[#FFA500]">Partenaires</span>
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600">
               Ils nous font confiance pour développer le sport africain
             </p>
           </div>
 
           {/* Partners Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 mb-8 sm:mb-12">
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex items-center justify-center"
+                className="bg-white p-3 sm:p-6 rounded-xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex items-center justify-center"
               >
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="max-h-20 w-auto object-contain"
+                  className="max-h-16 sm:max-h-20 w-auto object-contain"
                 />
               </div>
             ))}
@@ -481,7 +477,7 @@ export default function HomePage() {
           <div className="text-center">
             <a
               href="/partenaires"
-              className="inline-flex items-center px-6 py-3 bg-[#B91C2E] text-white font-semibold rounded-full hover:bg-[#9a1726] transition-all hover:shadow-lg"
+              className="inline-flex items-center px-4 sm:px-6 py-2.5 sm:py-3 bg-[#B91C2E] text-white font-semibold text-sm sm:text-base rounded-full hover:bg-[#9a1726] transition-all hover:shadow-lg"
             >
               Découvrir nos partenariats
               <ArrowRight className="ml-2" size={18} />
@@ -491,18 +487,18 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white">
+      <section className="py-8 sm:py-12 lg:py-16 bg-gradient-to-r from-[#B91C2E] to-[#FFA500] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
             Prêt à franchir le prochain niveau ?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto">
             Rejoignez ACOMZÉN et bénéficiez d'un accompagnement professionnel
             pour votre carrière sportive
           </p>
           <a
             href="/inscription"
-            className="inline-flex items-center px-8 py-4 bg-white text-[#B91C2E] font-bold rounded-full hover:bg-gray-100 transition-all hover:shadow-xl text-lg"
+            className="inline-flex items-center px-6 sm:px-8 py-2.5 sm:py-4 bg-white text-[#B91C2E] font-bold rounded-full hover:bg-gray-100 transition-all hover:shadow-xl text-sm sm:text-lg"
           >
             Inscrivez-vous gratuitement
             <ArrowRight className="ml-2" size={20} />
